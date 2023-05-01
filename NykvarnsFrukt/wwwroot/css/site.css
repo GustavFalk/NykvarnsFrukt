@@ -1,6 +1,65 @@
 :root {
-    --nav-background: linear-gradient(180deg, #0C0C0C 0%, #2C2C2C 100%);
-    
+    --navAndFoot-background: linear-gradient(180deg, #0C0C0C 0%, #2C2C2C 100%);
+    --light-green-background: linear-gradient(68.21deg, #F7FFF0 0%, #EDFFDE 100%);
+    --main-green: #87E140;
+    --main-green-gradient: linear-gradient(270.27deg, #87E140 2.05%, #AEE782 100.21%);
+    --item-green-card-opacity: rgba(135, 225, 64, 0.5);
+    --overlay-green-card: rgba(135, 225, 64, 0.85);
+    --green-card-box-shadow: 0px 0px 6px 2px rgba(135, 225, 64, 0.4);
+    --white-card-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Louis George Cafe';
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    margin:0;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 0;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 0;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0;
 }
 
 html {
@@ -20,8 +79,12 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  
 }
 
 body {
-  margin-bottom: 60px;
+    /*margin-bottom: 130px;*/
+    margin: 0;
+    width: 100%;
+    padding:0;
 }

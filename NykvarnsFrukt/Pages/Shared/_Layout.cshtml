@@ -4,24 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - NykvarnsFrukt</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    @*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/NykvarnsFrukt.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <div class="page-wrapper">
+    @*<div class="page-wrapper">*@
     <header>
         <nav class="top-navbar">
-            <div class="logotype" asp-page="/Index">
-
-            </div>
-            <div>
+                <img class="logotype" src="images/NFOG-logo.png" asp-page="/Index"/>
+         
+               
+            @*     <div>
                 <ul>
                     <li></li>
                 </ul>
-            </div>
+            </div>*@
         </nav>
-  @*      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        @*      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">NykvarnsFrukt</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -47,10 +47,17 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - NykvarnsFrukt - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
+    <footer>
+        <div class="footer-div">
+          <h6>Nykvarns frukt och grönt AB</h6>
+          <p class="footer-small-text">Familjedriven leverantör av frukt, grönt och färskvaror i Nykvarn med omnejd.</p>
+
+          <p class="footer-small-text">Mail: <span>mailen@mail.se</span></p>
+          <p class="footer-small-text">Tel: <span>010-1605403</span></p>
+          <p class="footer-small-text">Orgnr: <span>559348-7100</span></p> 
+
+          <p class="footer-xsmall-text">&copy; Nykvarns frukt och grönt AB. <span> Web by: Gustav Falk</span></p>
+     </div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -58,6 +65,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
-    </div>
+    @* </div>*@
 </body>
 </html>
