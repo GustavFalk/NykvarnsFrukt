@@ -12,15 +12,22 @@
     @*<div class="page-wrapper">*@
     <header>
         <nav class="top-navbar">
-                <img class="logotype" src="images/NFOG-logo.png" asp-page="/Index"/>
-         
-               
-            @*     <div>
-                <ul>
-                    <li></li>
-                </ul>
-            </div>*@
+            <img class="logotype" src="images/NFOG-logo.png" asp-page="/Index"/>
+            <input type="checkbox" id="toggle" onclick="expandCollapseNav()" class="input-toggler" unchecked>
+            <label for="toggle" class="menu-toggler">
+                <span class="menu-toggler-line"></span>
+                <span class="menu-toggler-line"></span>
+                <span class="menu-toggler-line"></span>
+            </label>
         </nav>
+        <ul class="nav-dropdown nav-collapse" id="nav-dropdown">
+            
+            <li class="link-item link-item-1" href=""><h4>Hem</h4></li>
+            <li class="link-item link-item-2"><h4>Produkter</h4></li>
+            <li class="link-item link-item-3"><h4>Vår butik</h4></li>
+            <li class="link-item link-item-4"><h4>Om oss</h4></li>
+            <li class="link-item link-item-5"><h4>Kontakta oss</h4></li>
+        </ul>
         @*      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">NykvarnsFrukt</a>
