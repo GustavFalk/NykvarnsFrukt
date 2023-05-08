@@ -1,0 +1,67 @@
+﻿.landing-green-card {
+    margin: 70px 0 0 0;
+    
+    width: auto;
+    border-radius: 15px;
+    background: var(--main-green);
+    padding: 0 29px;
+    display:flex;
+    flex-direction:column;
+    box-shadow: var(--green-card-box-shadow);
+}
+
+    .landing-green-card h3 {
+        color: #fff;
+        margin:28px 0 0 0;
+    }
+
+    .landing-green-card h2 {
+        margin: 7px 0 0 0;
+        color: #000;
+    }
+
+.ladning-upper-section {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.round-image {
+    margin-top: -70px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+    .round-image img {
+        width: 130%;
+        height: 100%;
+        margin-left: -15px;
+        object-fit: cover;
+    }
+
+.contact-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 42px 0;
+}
+
+.contact-btn {
+    height: 35px;
+    width: 130px;
+    background: #000;
+    border-radius: 25px;
+    color:#fff;
+    border:none;
+    display:flex;
+    align-items:center;
+    padding:0 15px;
+    justify-content:space-evenly;
+}
+
+    .contact-btn:hover {
+        cursor: pointer;
+        background:var(--main-green);
+        border:solid 2px #fff;
+    }

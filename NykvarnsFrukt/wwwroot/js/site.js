@@ -19,12 +19,40 @@ function expandCollapseNav() {
     }
 }
 
+function expandProductNav() {
+    var x = document.getElementById("arrow-icon");
+    var elements = document.getElementsByClassName("product-link");
+    if (x.classList.contains("arrow-right")) {
+
+        $("li.product-link").removeClass("under-nav-collapse");
+        $("h4#arrow-icon").removeClass("arrow-right");
+        $("li.product-link").addClass("under-nav-grow");
+        $("h4#arrow-icon").addClass("arrow-down");
+        
+    }
+    else {
+        $("li.product-link").removeClass("under-nav-grow");
+        $("h4#arrow-icon").removeClass("arrow-down");
+        $("li.product-link").addClass("under-nav-collapse");
+        $("h4#arrow-icon").addClass("arrow-right");
+    }
+}
+
 //set active menu option
 $(document).ready(function () {
     $("ul.nav-dropdown> li").click(function (e) {
         $("ul.nav-dropdown > li").removeClass("active");
         $(this).addClass("active");
+        if ((this).classList.contains("product-link")) {
+            $("li.product-nav").addClass("active");
+        }
     });
 });
+
+
+//Open mail client
+document.getElementById("mail-btn").onclick = function () {
+    location.href = "mailto:gustavfalk@live.se";
+};
 
 
