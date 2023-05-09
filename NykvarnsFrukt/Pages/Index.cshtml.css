@@ -1,12 +1,13 @@
-﻿.landing-green-card {
-    margin: 70px 0 0 0;
-    
+﻿/*--------Top green card--------*/
+
+.landing-green-card {
+    margin: 70px 0 25px 0;
     width: auto;
     border-radius: 15px;
     background: var(--main-green);
     padding: 0 29px;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     box-shadow: var(--green-card-box-shadow);
 }
 
@@ -64,4 +65,95 @@
         cursor: pointer;
         background:var(--main-green);
         border:solid 2px #fff;
+    }
+
+/*--------Opening hours--------*/
+
+.opening-hours {
+    height: 232px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: var(--white-card-box-shadow);
+    position: relative;
+    margin-bottom: 25px;
+}
+
+    .opening-hours img {
+        width: 130%;
+        height: 130%;
+        object-fit: cover;
+        margin-top:-15px;
+    }
+.green-overlay {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    justify-content:center;:center;
+    position: absolute;
+    background: var(--overlay-green-card);
+    top: 32px;
+    right:22px;
+    border-radius: 10px;
+    width:145px;
+    height: 168px;
+    color: #fff;
+}
+
+    .green-overlay h4{
+        margin-bottom:4px;
+    }
+
+    .opening-hours-title {
+        margin-bottom: 8px;
+        color: #000;
+        font-weight: 700;
+    }
+
+/*--------Find us--------*/
+.find-us {
+    height: 115px;
+    width: auto;
+    background: #fff;
+    box-shadow: var(--white-card-box-shadow);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 33px 0 33px;
+    margin-bottom: 25px;
+}
+
+.adress-description h5 {
+    color: var(--main-green);
+    font-weight: 700;
+    margin-bottom:4px;
+}
+.adress-description h4 {
+    color: #000;
+    font-weight: 700;
+}
+
+.store-icon img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+/*--------Map--------*/
+
+.map {
+    position: relative;
+    overflow: hidden;
+    height: 333px;
+    margin: 0 -18px -18px -18px;
+    box-shadow: var(--white-card-box-shadow);
+}
+
+    .map iframe {
+        position: absolute;
+        height:100%;
+        width:100%;
     }

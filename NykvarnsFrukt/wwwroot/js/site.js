@@ -55,4 +55,8 @@ document.getElementById("mail-btn").onclick = function () {
     location.href = "mailto:gustavfalk@live.se";
 };
 
+//Open map application/webpage
+document.getElementById("store-icon").onclick = function () {
+    window.open("http://maps.apple.com/?q=S%C3%B6dert%C3%A4ljev%C3%A4gen+20,+155+32+Nykvarn","_blank");
+};
 
