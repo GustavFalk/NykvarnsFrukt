@@ -4,7 +4,7 @@
     --main-green: #5FCE08;
     --second-green: #DAF6C4;
     --third-green: #F7FDF2;
-    --main-green-gradient: linear-gradient(270.27deg, #87E140 2.05%, #AEE782 100.21%);
+    --main-green-gradient: linear-gradient(270.27deg, #5FCE08 2.05%, #AEE782 100.21%);
     --item-green-card-opacity: rgba(135, 225, 64, 0.5);
     --overlay-green-card: rgba(95, 206, 8, 0.85);
     --green-card-box-shadow: 0px 0px 6px 2px rgba(135, 225, 64, 0.4);
