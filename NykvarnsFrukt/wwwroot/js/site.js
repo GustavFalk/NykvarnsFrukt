@@ -38,16 +38,32 @@ function expandProductNav() {
     }
 }
 
-//set active menu option
+//close nav on click outside
 $(document).ready(function () {
-    $("ul.nav-dropdown> li").click(function (e) {
-        $("ul.nav-dropdown > li").removeClass("active");
-        $(this).addClass("active");
-        if ((this).classList.contains("product-link")) {
-            $("li.product-nav").addClass("active");
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $("ul.nav-dropdown").hasClass("nav-grow");
+        if (_opened === true && !clickover.hasClass("nav-grow") && !clickover.hasClass("toggle")) {
+            $("input.input-toggler").click();
         }
     });
 });
+
+//set active menu option
+//$(document).ready(function () {
+//    $("ul.nav-dropdown> li").click(function (e) {
+//        $("ul.nav-dropdown > li").removeClass("active");
+//        $(this).addClass("active");
+//        if ((this).classList.contains("product-link")) {
+//            $("li.product-nav").addClass("active");
+//        }
+//    });
+//});
+var loc = window.location.pathname;
+var pageName = loc.replace("/", "");
+$("ul.nav-dropdown > li").removeClass("active");
+var activePageNav = document.getElementById(pageName);
+$(activePageNav).addClass("active");
 
 
 //Open mail client
