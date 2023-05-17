@@ -89,7 +89,7 @@
     display:flex;
     flex-direction:column;
     text-align:center;
-    justify-content:center;:center;
+    justify-content:center;
     position: absolute;
     background: var(--overlay-green-card);
     top: 32px;
