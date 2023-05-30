@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav class="top-navbar toggle">
-            <img class="logotype toggle" src="images/NFOG-logo.svg" asp-page="/Index" />
+            <img class="logotype toggle" src="images/NFOG-logo.svg" asp-page="/Index" alt="Nykvarns frukt och grönt logo"/>
             <input type="checkbox" id="toggle" onclick="expandCollapseNav()" class="input-toggler toggle" unchecked>
             <label for="toggle" class="menu-toggler toggle">
                 <span class="menu-toggler-line toggle"></span>
@@ -22,15 +22,15 @@
         <ul class="nav-dropdown nav-collapse toggle" id="nav-dropdown">
             <li class="link-item toggle" id="Index" onclick="location.href='/Index'"><h4 class="toggle">Hem</h4></li>
             <li class="link-item product-nav toggle" id="Products"><h4 style="width:70%" class="toggle" onclick="location.href='/Products'">Produkter</h4><div id="arrow-container" class="toggle" onclick="expandProductNav()"><h4 class="arrow-right toggle" id="arrow-icon">></h4></div></li>
-            <li class="product-link under-nav-collapse toggle"><h5 class="toggle">Frukt och grönsaker</h5></li>
-            <li class="product-link under-nav-collapse toggle"><h5 class="toggle">Växter och blommor</h5></li>
-            <li class="product-link under-nav-collapse toggle"><h5 class="toggle">Fisk och skaldjur</h5></li>
-            <li class="product-link under-nav-collapse toggle"><h5 class="toggle">Ägg och honung</h5></li>
-            <li class="product-link under-nav-collapse toggle"><h5 class="toggle">Bröd och bullar</h5></li>
-            <li class="product-link under-nav-collapse toggle"><h5 class="toggle">Säsongsbaserat sortiment</h5></li>
+            <li class="product-link under-nav-collapse toggle" onclick="location.href='/Products#fruit'"><h5 class="toggle">Frukt och grönsaker</h5></li>
+            <li class="product-link under-nav-collapse toggle" onclick="location.href='/Products#flowers'"><h5 class="toggle">Växter och blommor</h5></li>
+            <li class="product-link under-nav-collapse toggle" onclick="location.href='/Products#fish'"><h5 class="toggle">Fisk och skaldjur</h5></li>
+            <li class="product-link under-nav-collapse toggle" onclick="location.href='/Products#egg'"><h5 class="toggle">Ägg och honung</h5></li>
+            <li class="product-link under-nav-collapse toggle" onclick="location.href='/Products#bread'"><h5 class="toggle">Bröd och bullar</h5></li>
+            <li class="product-link under-nav-collapse toggle" onclick="location.href='/Products#season'"><h5 class="toggle">Säsongsbaserat sortiment</h5></li>
             <li class="link-item toggle" id="Store" onclick="location.href='/Store'"><h4 class="toggle">Vår butik</h4></li>
             <li class="link-item toggle" id="About" onclick="location.href='/About'"><h4 class="toggle">Om oss</h4></li>
-            <li class="link-item toggle"><h4 class="toggle">Kontakta oss</h4></li>
+            <li class="link-item toggle" id="Contact" onclick="location.href='/Contact'"><h4 class="toggle">Kontakta oss</h4></li>
           
         </ul>
         @*      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
@@ -61,11 +61,9 @@
         <div class="footer-div">
             <h6>Nykvarns frukt och grönt AB</h6>
             <p class="footer-small-text">Familjedriven leverantör av frukt, grönt och färskvaror i Nykvarn med omnejd.</p>
-
             <p class="footer-small-text">Mail: <span>mailen@mail.se</span></p>
             <p class="footer-small-text">Tel: <span>010-1605403</span></p>
             <p class="footer-small-text">Orgnr: <span>559348-7100</span></p>
-
             <p class="footer-xsmall-text">&copy; Nykvarns frukt och grönt AB. <span> Web by: Gustav Falk</span></p>
         </div>
     </footer>

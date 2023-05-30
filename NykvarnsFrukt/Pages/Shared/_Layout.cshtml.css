@@ -101,13 +101,11 @@ ul, li {
 }
 
 .under-nav-grow {
-    transform-origin: top center;
-    animation: expandUnderNav 300ms ease-in-out forwards;
+    animation: expandUnderNav 200ms ease forwards;
 }
 
 .under-nav-collapse {
     display:none;
-    opacity: 0;
 }
 
 #arrow-container{
@@ -144,7 +142,7 @@ ul, li {
 
 @keyframes expandUnderNav {
     0% {
-        display:block;
+        
         opacity: 0;
         transform: translateY(-60px);
     }

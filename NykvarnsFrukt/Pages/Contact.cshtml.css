@@ -1,0 +1,153 @@
+﻿.contact-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.contact-green-card {
+    width: auto;
+    border-radius: 15px;
+    background: var(--main-green);
+    padding: 29px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    box-shadow: var(--green-card-box-shadow);
+}
+
+    .contact-green-card h3 {
+        color: #fff;
+    }
+
+.contact-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-btn {
+    height: 35px;
+    width: 120px;
+    background: #000;
+    border-radius: 25px;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    justify-content: space-evenly;
+    filter: drop-shadow(var(--btn-shadow));
+}
+
+    .contact-btn:hover {
+        cursor: pointer;
+        background: var(--main-green);
+        border: solid 2px #fff;
+    }
+
+
+.contact-white-card {
+    width: auto;
+    border-radius: 15px;
+    background: #fff;
+    padding: 29px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    box-shadow: var(--white-card-box-shadow);
+}
+
+    .contact-white-card h5, .contact-white-card h4 {
+        font-weight: 700;
+    }
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+    .contact-row img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .contact-row div {
+        width: 100%;
+        flex: 2;
+    }
+
+
+.contact-color-cards {
+    width: 100%;
+    position: relative;
+    height: 170px;
+}
+
+    .contact-color-cards div {
+        position: absolute;
+        width: 80%;
+        height: 75%;
+        border-radius: 10px;
+    }
+
+.light-green-card-first {
+    background: var(--item-green-card-opacity);
+    right: 0;
+    top: 0;
+}
+
+.light-green-card-second {
+    background: var(--item-green-card-opacity);
+    left: 0;
+    bottom: 0;
+}
+
+.main-green-card {
+    background: var(--main-green);
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--green-card-box-shadow);
+}
+
+    .main-green-card h5 {
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .main-green-card h4 {
+        font-weight: 700;
+    }
+
+.facebook {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:center;
+    gap:5px;
+    width:100%;
+}
+
+.facebook img{
+    height:75px;
+    width: 75px;
+    margin-bottom:10px;
+    
+}
