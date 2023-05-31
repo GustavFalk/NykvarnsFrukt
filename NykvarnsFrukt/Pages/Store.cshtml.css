@@ -296,18 +296,18 @@
         gap:10px;
     }
 
-    .store-directions{
-
-    }
-    .store-direction-card img {
+      .store-direction-card img {
         height: 60%;
         width: auto;
         position: relative;
         right: unset;
         top: unset;
     }
+
+    .map {
+      width:100%;
+      margin:0 0 -28px 0;
+    }
 }
 
 
-@media (min-width: 1200px) {
-}
