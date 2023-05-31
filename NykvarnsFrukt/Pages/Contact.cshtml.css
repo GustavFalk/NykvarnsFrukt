@@ -1,8 +1,10 @@
-﻿.contact-wrapper{
-    display:flex;
-    flex-direction:column;
-    gap:25px;
+﻿.contact-wrapper, .contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
+
+
 
 .contact-green-card {
     width: auto;
@@ -150,4 +152,53 @@
     width: 75px;
     margin-bottom:10px;
     
+}
+
+@media (min-width: 1000px) {
+
+    .contact-wrapper{
+        gap:35px;
+    }
+    .contact-section {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-green-card {
+        flex:1;
+        justify-content:center;
+        gap:15px;
+       
+    }
+
+    .contact-white-card {
+        flex: 2;
+    }
+
+    #mail-btn-order{
+        width:150px;
+    }
+
+    .desktop-hide {
+        display: none;
+    }
+
+    .contact-color-cards{
+        height:250px;
+        flex:2.5;
+    }
+
+    .main-green-card {
+      padding-left:25px;
+    }
+
+    .facebook {
+        align-self: center;
+        flex: 1;
+    }
+}
+
+
+@media (min-width: 1200px) {
 }

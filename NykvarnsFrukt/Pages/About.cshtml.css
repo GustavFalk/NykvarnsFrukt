@@ -9,15 +9,13 @@
 }
 
 .image-container {
- 
-   display:flex;
-   justify-content:end;
-   margin:0 -10px -25px 0;
+    display: flex;
+    justify-content: end;
+    margin: 0 -10px -25px 0;
 }
 
     .image-container img {
         object-fit: cover;
-       
         width: 75%;
         height: auto;
         border-radius: 50%;
@@ -26,50 +24,51 @@
 .text-container {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
 }
 
     .text-container h1 {
         color: var(--main-green);
     }
 
-    .text-container h6 {
+    .text-container h5 {
         color: #000;
+        font-weight: 600;
     }
 
 
 
 .history-section {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     margin-top: 25px;
-    gap:10px;
+    gap: 10px;
 }
 
 .image-section {
-    width: 100%;
+    width: auto;
     height: 260px;
     position: relative;
 }
-.inner-section-card{
-    width:60%;
-    height:60%;
-    border-radius:5px;
+
+.inner-section-card {
+    width: 60%;
+    height: 60%;
+    border-radius: 5px;
     position: absolute;
-    overflow:hidden;
-    
+    overflow: hidden;
 }
+
     .inner-section-card img {
         height: 100%;
         width: 100%;
-        object-fit:cover;
+        object-fit: cover;
     }
 
 
 #upper-right-green, #lower-left-green {
     background: var(--main-green);
-    
 }
 
 #upper-right-green {
@@ -78,7 +77,6 @@
 }
 
 #upper-right-image {
-   
     top: 0;
     right: 10px;
 }
@@ -107,8 +105,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap:5px;
+    gap: 5px;
 }
+
+    .text-section h5 {
+        font-weight: 600
+    }
 
 .green {
     color: var(--main-green);
@@ -117,28 +119,111 @@
 .about-footer {
     width: 100vw;
     margin: 25px -28px -28px -28px;
-    height: 240px;
+    height: 260px;
     position: relative;
-
 }
 
     .about-footer img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        position:absolute;
-        top:0;
-        filter: grayscale(65%) contrast(60%) brightness(0.50) saturate(4);
+        position: absolute;
+        top: 0;
+        filter: grayscale(70%) contrast(50%) brightness(0.40) saturate(4);
     }
 
-.footer-text{
-    position:absolute;
-    padding:28px;
-    display:flex;
-    flex-direction:column;
-    gap:5px;
+.footer-text {
+    position: absolute;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.footer-text p{
-    color:#fff;
+    .footer-text h5 {
+        color: #fff;
+        font-weight:500;
+    }
+
+@media (min-width: 700px) {
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        height: 100%;
+    }
+
+    .about-us-card {
+        padding: 29px;
+        flex-direction: row-reverse;
+    }
+
+    .image-container {
+        justify-content: center;
+        margin: 0;
+        flex: 1;
+        height: 100%;
+    }
+
+        .image-container img {
+            width: 60%;
+        }
+
+    .text-container {
+        gap: 10px;
+        flex: 2;
+        justify-content: center;
+    }
+
+    .history-section {
+        height: 320px;
+        flex-direction: row-reverse;
+        margin-top: 0;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .image-section {
+        width: auto;
+        height: 100%;
+        flex: 1;
+    }
+
+    .text-section {
+        gap: 10px;
+        flex: 1;
+    }
+
+    .about-footer {
+        width: 100%;
+        margin: 25px 0 0 0;
+        height: auto;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        display:flex;
+        align-items:center;
+    }
+
+        .about-footer img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+         
+        }
+
+    .footer-text {
+        position: relative;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 28px;
+    }
+}
+
+
+@media (min-width: 1200px) {
 }

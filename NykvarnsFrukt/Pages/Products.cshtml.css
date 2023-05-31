@@ -69,3 +69,25 @@
         margin-top:10px;
         font-weight:600;
     }
+
+@media (min-width: 1000px) {
+    .product-header {
+        width: 100%;
+        margin: 0;
+        height: 180px;
+        top: unset;
+        left: unset;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: var(--white-card-box-shadow);
+    }
+    .page-wrapper {
+        flex-direction: row;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+}

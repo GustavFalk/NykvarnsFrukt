@@ -12,7 +12,8 @@ function expandCollapseNav() {
         $("ul.nav-dropdown").removeClass("nav-grow");
         $("ul.nav-dropdown").addClass("nav-collapse");
 
-    } else {
+    }
+    else {
         $("ul.nav-dropdown").removeClass("nav-collapse");
         $("ul.nav-dropdown").addClass("nav-grow");
 
@@ -54,7 +55,10 @@ var pageName = loc.replace("/", "");
 $("ul.nav-dropdown > li").removeClass("active");
 var activePageNav = document.getElementById(pageName);
 $(activePageNav).addClass("active");
-
+if (pageName == "") {
+    var activePageNav = document.getElementById("Index");
+    $(activePageNav).addClass("active");
+}
 
 //Open mail client
 

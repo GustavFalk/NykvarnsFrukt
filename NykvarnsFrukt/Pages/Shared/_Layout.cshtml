@@ -4,20 +4,30 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
-    @*    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/NykvarnsFrukt.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
         <nav class="top-navbar toggle">
-            <img class="logotype toggle" src="images/NFOG-logo.svg" asp-page="/Index" alt="Nykvarns frukt och grönt logo"/>
-            <input type="checkbox" id="toggle" onclick="expandCollapseNav()" class="input-toggler toggle" unchecked>
-            <label for="toggle" class="menu-toggler toggle">
-                <span class="menu-toggler-line toggle"></span>
-                <span class="menu-toggler-line toggle"></span>
-                <span class="menu-toggler-line toggle"></span>
-            </label>
+            <span class="nav-wrapper toggle">
+                <img class="logotype toggle" src="images/NFOG-logo.svg" onclick="location.href='/Index'" alt="Nykvarns frukt och grönt logo" />
+                <input type="checkbox" id="toggle" onclick="expandCollapseNav()" class="input-toggler toggle" unchecked>
+                <label for="toggle" class="menu-toggler toggle">
+                    <span class="menu-toggler-line toggle"></span>
+                    <span class="menu-toggler-line toggle"></span>
+                    <span class="menu-toggler-line toggle"></span>
+                </label>
+
+              @*  Desktop menu*@
+                <ul class="nav-bar">
+                    <li class="link-item" id="Index" onclick="location.href='/Index'"><h4>Hem</h4></li>
+                    <li class="link-item" id="Products" onclick="location.href='/Products'"><h4>Produkter</h4></li>
+                    <li class="link-item" id="Store" onclick="location.href='/Store'"><h4>Vår butik</h4></li>
+                    <li class="link-item" id="About" onclick="location.href='/About'"><h4>Om oss</h4></li>
+                    <li class="link-item" id="Contact" onclick="location.href='/Contact'"><h4>Kontakta oss</h4></li>
+                </ul>
+            </span>
         </nav>
         <ul class="nav-dropdown nav-collapse toggle" id="nav-dropdown">
             <li class="link-item toggle" id="Index" onclick="location.href='/Index'"><h4 class="toggle">Hem</h4></li>
@@ -31,25 +41,7 @@
             <li class="link-item toggle" id="Store" onclick="location.href='/Store'"><h4 class="toggle">Vår butik</h4></li>
             <li class="link-item toggle" id="About" onclick="location.href='/About'"><h4 class="toggle">Om oss</h4></li>
             <li class="link-item toggle" id="Contact" onclick="location.href='/Contact'"><h4 class="toggle">Kontakta oss</h4></li>
-          
         </ul>
-        @*      <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-        <div class="container">
-        <a class="navbar-brand" asp-area="" asp-page="/Index">NykvarnsFrukt</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-        <ul class="navbar-nav flex-grow-1">
-        <li class="nav-item">
-        <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-        </li>
-       
-        </ul>
-        </div>
-        </div>
-        </nav>*@
 
     </header>
     <main role="main">

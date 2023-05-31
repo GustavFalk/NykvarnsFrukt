@@ -158,3 +158,123 @@
         height:100%;
         width:100%;
     }
+
+@media (min-width: 1000px) {
+
+
+
+    .round-image {
+        margin-top: -100px;
+        height: 300px;
+        width: auto;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+        .round-image img {
+            width: 130%;
+            height: 100%;
+            margin-left: -15px;
+            object-fit: cover;
+        }
+
+    #phone-btn {
+        display: none;
+    }
+
+    .contact-btn {
+        height: 35px;
+        width: 200px;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-green-card {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 60px 60px 0 28px;
+    }
+
+    .open-hours-find-us {
+        display: flex;
+        width: 100%;
+        gap: 25px;
+    }
+
+
+    .opening-hours {
+        height: 200px;
+        width: auto;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: var(--white-card-box-shadow);
+        position: relative;
+        margin-bottom: 25px;
+        flex: 2;
+        align-items: center;
+        display: flex
+    }
+
+        .opening-hours img {
+            width: 130%;
+            height: 130%;
+            object-fit: cover;
+            margin-top: -15px;
+        }
+
+    .green-overlay {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        background: var(--overlay-green-card);
+        border-radius: 10px;
+        width: auto;
+        height: auto;
+        padding: 29px;
+        align-self: center;
+        top: auto;
+        right: 29px;
+    }
+
+        .green-overlay h4 {
+            margin-bottom: 4px;
+        }
+
+    .opening-hours-title {
+        margin-bottom: 8px;
+        color: #000;
+        font-weight: 700;
+    }
+
+
+    .find-us {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 33px 0 33px;
+        margin-bottom: 25px;
+        flex: 1;
+        gap: 25px;
+    }
+
+    .store-icon {
+        flex: 1;
+    }
+
+        .store-icon img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+    .map {
+        max-height: 500px;
+        height: auto;
+        min-height: 333px;
+    }
+}

@@ -26,10 +26,17 @@
     gap: 5px;
 }
 
-    .green-overlay h6 {
-        color: #fff;
+    .green-overlay .black {
         font-weight: 600;
+        color: black;
     }
+
+
+    .green-overlay h5 {
+        font-weight: 600;
+        color: #fff;
+    }
+
 
 
 .store-info {
@@ -52,7 +59,7 @@
     gap: 5px;
     position: relative;
     justify-content: end;
-    flex:1;
+    flex: 1;
 }
 
 
@@ -71,7 +78,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 25px 0;
+    margin: 35px 0;
 }
 
 .store-opening-hours {
@@ -146,6 +153,7 @@
         position: absolute;
         right: 0;
         top: 0;
+        cursor:pointer;
     }
 
 
@@ -171,4 +179,135 @@
 
 .bold {
     font-weight: 700;
+}
+
+@media (min-width: 1000px) {
+
+    .store-header {
+        width: 100%;
+        margin: 0;
+        height: 250px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: var(--white-card-box-shadow);
+    }
+
+    .green-overlay {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: var(--overlay-green-card);
+        top: 28px;
+        left: 28px;
+        bottom: 28px;
+        border-radius: 10px;
+        width: 300px;
+        height: auto;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .store-info {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .store-info-card img {
+        width: 75%;
+        height: auto;
+        border-radius: 10px;
+        margin: -50px 0 10px 0;
+    }
+
+
+    .direction-and-openhours {
+        flex-direction: row-reverse;
+        gap: 25px;
+        height: 280px
+    }
+
+    .image-with-green-cards {
+        flex: 2;
+        position: relative;
+    }
+
+    .light-green-card {
+        background: var(--item-green-card-opacity);
+        width: 90%;
+        height: 90%;
+        border-radius: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .standard-green-card {
+        background: var(--main-green);
+        width: 90%;
+        height: 90%;
+        border-radius: 2px;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .image-with-green-cards img {
+        width: 90%;
+        height: 90%;
+        border-radius: 2px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    .store-opening-hours {
+        display: flex;
+        flex: 3;
+    }
+
+    .open-hours-text {
+        flex: ;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+        .open-hours-text p {
+            font-size: 16px;
+        }
+
+    .store-direction-card {
+        display: flex;
+        flex-direction:column-reverse;
+        padding: 0;
+        position: relative;
+        justify-content: center;
+        flex: 1;
+        text-align:center;
+        gap:10px;
+    }
+
+    .store-directions{
+
+    }
+    .store-direction-card img {
+        height: 60%;
+        width: auto;
+        position: relative;
+        right: unset;
+        top: unset;
+    }
+}
+
+
+@media (min-width: 1200px) {
 }
