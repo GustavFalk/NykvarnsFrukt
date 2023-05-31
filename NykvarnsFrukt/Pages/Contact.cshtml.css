@@ -197,6 +197,13 @@
         align-self: center;
         flex: 1;
     }
+
+        .facebook img {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
 }
 
 
