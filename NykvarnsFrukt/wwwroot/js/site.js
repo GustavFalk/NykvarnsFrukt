@@ -1,22 +1,14 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
-
-//Expand and collapse nav
+﻿//Expand and collapse nav
 function expandCollapseNav() {
     var x = document.getElementById("nav-dropdown");
     if (x.classList.contains("nav-grow")) {
 
         $("ul.nav-dropdown").removeClass("nav-grow");
         $("ul.nav-dropdown").addClass("nav-collapse");
-
     }
     else {
         $("ul.nav-dropdown").removeClass("nav-collapse");
         $("ul.nav-dropdown").addClass("nav-grow");
-
     }
 }
 
@@ -29,7 +21,6 @@ function expandProductNav() {
         $("h4#arrow-icon").removeClass("arrow-right");
         $("li.product-link").addClass("under-nav-grow");
         $("h4#arrow-icon").addClass("arrow-down");
-
     }
     else {
         $("li.product-link").removeClass("under-nav-grow");
@@ -50,6 +41,7 @@ $(document).ready(function () {
     });
 });
 
+//Show active page in nav
 var loc = window.location.pathname;
 var pageName = loc.replace("/", "");
 $("ul.nav-dropdown > li").removeClass("active");
@@ -61,8 +53,6 @@ if (pageName == "") {
 }
 
 //Open mail client
-
-
 var mailBtn = document.getElementById("mail-btn")
 if (mailBtn != null) {
     mailBtn.onclick = function () {
@@ -70,7 +60,7 @@ if (mailBtn != null) {
     };
 }
 
-//Open mail client
+//Open mail client for order
 var mailBtnOrder = document.getElementById("mail-btn-order")
 if (mailBtnOrder != null) {
     mailBtnOrder.onclick = function () {

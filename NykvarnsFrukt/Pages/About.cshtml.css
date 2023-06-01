@@ -33,7 +33,7 @@
 
     .text-container h5 {
         color: #000;
-        font-weight: 600;
+        font-weight: 500;
     }
 
 
@@ -109,7 +109,7 @@
 }
 
     .text-section h5 {
-        font-weight: 600
+        font-weight: 500
     }
 
 .green {
@@ -142,7 +142,7 @@
 
     .footer-text h5 {
         color: #fff;
-        font-weight:500;
+        font-weight:400;
     }
 
 @media (min-width: 700px) {
@@ -166,7 +166,7 @@
     }
 
         .image-container img {
-            width: 60%;
+            width: 80%;
         }
 
     .text-container {
@@ -197,7 +197,7 @@
     .about-footer {
         width: 100%;
         margin: 25px 0 0 0;
-        height: auto;
+        height: 200px;
         position: relative;
         border-radius: 15px;
         overflow: hidden;
@@ -225,5 +225,3 @@
 }
 
 
-@media (min-width: 1200px) {
-}

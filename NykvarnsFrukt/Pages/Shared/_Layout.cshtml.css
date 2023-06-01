@@ -70,11 +70,11 @@ header {
     position: relative;
     transition: all .40s ease-out;
     border-radius: 20px;
+    display: inline-block
 }
 
 .input-toggler:checked ~ .menu-toggler .menu-toggler-line {
     top: 6px;
-    translateY: 100px;
     transform: rotate(45deg);
 }
 
@@ -84,7 +84,6 @@ header {
 
     .input-toggler:checked ~ .menu-toggler .menu-toggler-line:nth-child(3) {
         top: -5px;
-        translateY: 10;
         transform: rotate(135deg);
     }
 

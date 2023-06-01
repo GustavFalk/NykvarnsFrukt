@@ -27,7 +27,7 @@
 }
 
     .green-overlay .black {
-        font-weight: 600;
+        font-weight: 500;
         color: black;
     }
 
@@ -271,7 +271,6 @@
     }
 
     .open-hours-text {
-        flex: ;
         text-align: center;
         align-items: center;
         justify-content: center;

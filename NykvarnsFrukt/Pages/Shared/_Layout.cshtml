@@ -12,11 +12,11 @@
         <nav class="top-navbar toggle">
             <span class="nav-wrapper toggle">
                 <img class="logotype toggle" src="images/NFOG-logo.svg" onclick="location.href='/Index'" alt="Nykvarns frukt och grönt logo" />
-                <input type="checkbox" id="toggle" onclick="expandCollapseNav()" class="input-toggler toggle" unchecked>
-                <label for="toggle" class="menu-toggler toggle">
-                    <span class="menu-toggler-line toggle"></span>
-                    <span class="menu-toggler-line toggle"></span>
-                    <span class="menu-toggler-line toggle"></span>
+                <input autocomplete='off' type="checkbox" id="toggle" onclick="expandCollapseNav()" class="input-toggler toggle" unchecked>
+                <label for="toggle" id="check" class="menu-toggler toggle">
+                    <span class="menu-toggler-line toggle" id="first-line"></span>
+                    <span class="menu-toggler-line toggle" id="second-line"></span>
+                    <span class="menu-toggler-line toggle" id="third-line"></span>
                 </label>
 
               @*  Desktop menu*@

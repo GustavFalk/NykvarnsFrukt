@@ -55,6 +55,7 @@
     text-align: center;
     padding: 28px;
     gap:10px;
+    flex:1;
 }
 
     .product-card img {
