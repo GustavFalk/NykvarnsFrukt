@@ -129,7 +129,7 @@
         object-fit: cover;
         position: absolute;
         top: 0;
-        filter: grayscale(70%) contrast(50%) brightness(0.40) saturate(4);
+        filter: grayscale(40%) contrast(60%) brightness(0.40) saturate(4);
     }
 
 .footer-text {
