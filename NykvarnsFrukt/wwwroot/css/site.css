@@ -12,6 +12,18 @@
     --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+@font-face {
+    font-family: Louis George Cafe;
+    src: url('../fonts/Louis George Cafe.ttf');
+}
+
+@font-face {
+    font-family: Louis George Cafe;
+    font-weight: bold;
+    src: url('../fonts/Louis George Cafe Bold.ttf');
+}
+
+
 * {
     font-family: 'Louis George Cafe';
     cursor: default;
