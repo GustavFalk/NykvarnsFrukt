@@ -71,6 +71,12 @@
         font-weight:600;
     }
 
+#fish img {
+    filter:  brightness(1) saturate(1.3);
+    object-fit:cover;
+    
+}
+
 @media (min-width: 1000px) {
     .product-header {
         width: 100%;

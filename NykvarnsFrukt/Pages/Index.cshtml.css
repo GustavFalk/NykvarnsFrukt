@@ -38,10 +38,11 @@
 
     .round-image img {
         width: 140%;
-        height:auto;
+        height: auto;
         margin-left: -50px;
         margin-top: -60px;
         object-fit: cover;
+        filter: contrast(120%) brightness(1.1) saturate(1.4);
     }
 
 .contact-buttons {
@@ -87,7 +88,7 @@
         height: 130%;
         object-fit: cover;
         margin-top: -35px;
-        filter: brightness(0.85) saturate(1.5);
+        filter: brightness(0.9) saturate(1.5);
     }
 .green-overlay {
     display:flex;
