@@ -56,7 +56,7 @@ if (pageName == "") {
 var mailBtn = document.getElementById("mail-btn")
 if (mailBtn != null) {
     mailBtn.onclick = function () {
-        location.href = "mailto:gustavfalk@live.se";
+        location.href = "mailto:nykvarnsfrukt@gmail.com ";
     };
 }
 
@@ -64,7 +64,7 @@ if (mailBtn != null) {
 var mailBtnOrder = document.getElementById("mail-btn-order")
 if (mailBtnOrder != null) {
     mailBtnOrder.onclick = function () {
-        location.href = "mailto:gustavfalk@live.se";
+        location.href = "mailto:nykvarnsfrukt@gmail.com ";
     };
 }
 
@@ -72,7 +72,7 @@ if (mailBtnOrder != null) {
 var phoneBtn = document.getElementById("phone-btn")
 if (phoneBtn != null) {
     phoneBtn.onclick = function () {
-        location.href = "tel:046105545684";
+        location.href = "tel:0101605403";
     };
 }
 
